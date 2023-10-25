@@ -1,0 +1,91 @@
+*{
+    margin:0px;
+    padding:0px;
+    text-decoration: none;
+    list-style-type: none;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+}
+.cs1{
+    display: flex;
+    justify-content: space-between;
+    background-color:purple;
+    font-size:20px;
+}
+.cs1 ul{
+    display: flex;
+    
+}
+.cs1 ul li{
+    margin:0 80px;
+    padding:20px;
+}
+.cs1 ul li a{
+    color:orange;
+    font-weight: bold;
+}
+.cs1 ul li a:hover{
+    color: green;
+    transform:  rotate(50deg);
+    cursor: pointer; 
+}
+body{
+    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v975-background-07-b-kqkr4ukm.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=d92b38f7af4f92cbb48fb96c37560242");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+.contact{
+    width:500px;
+    background-color:#fff;
+    
+    box-shadow:0 0 20px 0 #999;
+    tranform:translate(-50% , 50%);
+    position:absolute;
+    margin:50px;
+    padding:10px;
+}
+form{
+    margin:35px;
+    text-align: center;
+    
+}
+.input-feild{
+    width:400px;
+    height:40px;
+    margin-top:20px;
+    padding-left:10px;
+    padding-right:10px;
+    border:1px solid #777;
+    border-radius:14px;
+    outline:none;
+
+}
+.one{
+    border-radius:30px;
+    color:yellow;
+    margin-top:20px;
+    padding:10px;
+    background-color:green;
+    font-size:17px;
+    border:none;
+    cursor:pointer;
+    text-align: center;
+}
+h1{
+    text-decoration: underline;
+    text-align: center;
+    font-style: italic;
+}
+p{
+    text-align: center;
+    margin:200px;
+    padding-left:500px;
+    font-style: italic;
+    font-size: 20px;
+    color:purple
+}
