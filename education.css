@@ -1,0 +1,65 @@
+table{
+    margin: 50px;
+    pddding:100px;
+    
+}
+h1{
+    text-decoration: underline;
+    font-style: italic ;
+}
+body{
+    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v975-background-07-b-kqkr4ukm.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=d92b38f7af4f92cbb48fb96c37560242");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.one{
+    display: flex;
+    justify-content: space-between;
+  
+}
+img{
+    padding: 100px;
+    margin:10px;
+ }
+ *{
+    margin:0px;
+    padding:0px;
+    text-decoration: none;
+    list-style-type: none;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+}
+.cs1{
+    display: flex;
+    justify-content: space-between;
+    background-color:purple;
+    font-size:20px;
+}
+.cs1 ul{
+    display: flex;
+    
+}
+.cs1 ul li{
+    margin:0 80px;
+    padding:20px;
+}
+.cs1 ul li a{
+    color:orange;
+    font-weight: bold;
+}
+.cs1 ul li a:hover{
+    color: green;
+    transform:  rotate(50deg);
+    cursor: pointer; 
+}
+p{
+    margin:50px;
+    font-size:20px;
+    padding:100px;
+    padding-right: 20px;
+    color:purple;
+} 

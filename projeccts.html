@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <div class="cs1">
+        <ul>
+            <li ><a href="home.html" >Home</a></li>
+            <li ><a href="education.html" >Education</a></li>
+            <li ><a href="projeccts.html" >Projects</a></li>
+            <li ><a href="skills.html">Skills</a></li>
+            <li ><a href="contact.html">Contact</a></li> <br> <br>
+        </ul>
+    </div>
+    <h1> Hamming code error detection and correction using verilog code </h1> <br>
+    <h2> Abstract:</h2> <br>
+    <div class="two"> <br><br>
+    <p>This paper tries to explain the implementation of hamming code using VLSI. In the present world
+        the field ofcommunication has got many applications, and in every field the data is encoded at the
+        transmitter and transferred on a communication channel and received at the receiver after it is
+        decoded. During the transmission of data it might get corrupted because of some noise on the
+        channel. So it is necessary for the receiver to have some function which can detect the error in the
+        received data. Hamming code is one of such forward error correcting code which has got many
+        applications. In this paper the algorithm for hamming code is discussed and then implementation of
+        it in verilog is done to get the results. Hamming code is an improvement over parity check method.
+        Here a code is implemented in verilog in which 4-bit of information data is transmitted with 3-
+        redundancy bits. In order to find the value of these redundancy bits a code is written in verilog
+        which will be simulated in Xillinx 9.1 software. The result of simulation and test bench waveforms
+        are also shown Nowadays, intelligent devices can be found anywhere around us, and which help our
+        living more comfortable. Communication systems are their main modules, and which have been
+        attracting many scientists around the world. However, communication systems are performed under
+        many errors from environments and obstacles around us. To overcome obstacles and make trustable
+        and stable transmission, error control codes are invented and to be a great research fields to improve
+        the performance such as detecting and correcting capability. In this paper, various types of error
+        control code such as three popular error detecting and correcting codes: parity-check, CRC, and
+        Hamming codes are introduced detailly on those structures and applications. In addition, their
+        system on chip design are implemented on VERILOG HDL. Finally, the test benches with many
+        test cases are mentioned to verify the function of those codes.</p>
+        <img src="https://www.boardinfinity.com/blog/content/images/2022/11/Your-paragraph-text--65-.jpg" height="400px" width="400px" title="hammimg code">
+
+    </div>
+    <h3> General Algorithm :</h3>
+    <div class="para">
+        <p>The following general algorithm generates a single-error correcting (SEC) code for any number of
+            bits. The main idea is to choose the error-correcting bits such that the index-XOR (the XOR of all
+            the bit positions containing a 1) is 0. We use positions 1, 10, 100, etc. (in binary) as the error correcting bits, which guarantees it is possible to set the error-correcting bits so that the index-XOR
+            of the whole message is 0. If the receiver receives a string with index-XOR 0, they can conclude
+            there were no corruptions, and otherwise, the index-XOR indicates the index of the corrupted bit.
+            An algorithm can be deduced from the following description:
+            1. Number the bits starting from 1: bit 1, 2, 3, 4, 5, 6, 7, etc.
+            2. Write the bit numbers in binary: 1, 10, 11, 100, 101, 110, 111, etc.
+            3. All bit positions that are powers of two (have a single 1 bit in the binary form of their
+            position) are parity bits: 1, 2, 4, 8, etc. (1, 10, 100, 1000)
+            4. All other bit positions, with two or more 1 bits in the binary form of their position, are data
+            bits.
+            5. Each data bit is included in a unique set of 2 or more parity bits, as determined by the binary
+            form of its bit position.
+            1. Parity bit 1 covers all bit positions which have the least significant bit set: bit 1 (the
+            parity bit itself), 3, 5, 7, 9, etc.
+            2. Parity bit 2 covers all bit positions which have the second least significant bit set:
+            bits 2-3, 6-7, 10-11, etc.
+            3. Parity bit 4 covers all bit positions which have the third least significant bit set: bits
+            4–7, 12–15, 20–23, etc.
+            4. Parity bit 8 covers all bit positions which have the fourth least significant bit set: bits
+            8–15, 24–31, 40–47, etc.
+            5. In general each parity bit covers all bits where the bitwise AND of the parity position
+            and the bit position is non-zero.
+            If a byte of data to be encoded is 10011010, then the data word (using _ to represent the parity bits)
+            would be __1_001_1010, and the code word is 011100101010.
+            The choice of the parity, even or odd, is irrelevant but the same choice must be used for both
+            encoding and decoding.
+            This general rule can be shown visually</p>
+    </div> <br>
+
+    <h3> Advantages of Hamming code :</h3>
+     <p> 1.It can provide error detection and also indicates the bit which contains an error for
+            correction.<br>
+            2.Hamming codes are very easy and best to use in computer memory and single bit error correction and detection.<br>
+            3.The main advantages of using a hamming code is cost-effective if a data stream contains single-bit errors</p>
+     <img src="https://electronicsdesk.com/wp-content/uploads/2021/06/corrected-sequence-of-hamming-code.jpg" width="300px" heighr="300px">
+
+    <h1> Heart Disease Prediction</h1>
+    <h2> Abstract</h2>
+        <p> 
+            Heart disease, alternatively known as cardiovascular disease, encases various conditions that impact the heart and is the primary basis of death worldwide over the span of the past few decades. It associates many risk factors in heart disease and a need of the time to get accurate, reliable, and sensible approaches to make an early diagnosis to achieve prompt management of the disease. Data mining is a commonly used technique for processing enormous data in the healthcare domain. Researchers apply several data mining and machine learning techniques to analyse huge complex medical data, helping healthcare professionals to predict heart disease. This research paper presents various attributes related to heart disease, and the model on basis of supervised learning algorithms as Naïve Bayes, decision tree, K-nearest neighbor, and random forest algorithm. It uses the existing dataset from the Cleveland database of UCI repository of heart disease patients. The dataset comprises 303 instances and 76 attributes. Of these 76 attributes, only 14 attributes are considered for testing, important to substantiate the performance of different algorithms. This research paper aims to envision the probability of developing heart disease in the patients. The results portray that the highest accuracy score is achieved with K-nearest neighbor.
+        </p><br><br><br><br>
+        <div class="img"> 
+            <img src="https://i0.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/11/Machine-Learning-Project-on-Heart-Disease-Prediction.png?fit=1280%2C720&ssl=1" width="400px" height="400px">
+            <img src="https://www.researchgate.net/publication/331328453/figure/fig1/AS:730238606667778@1551113859830/The-framework-of-Heart-Disease-Prediction-System.jpg" width="400px" height="400px">
+        </div> 
+    <h2> Introduction</h2>
+    <p>Machine learning (ML) is a branch of artificial intelligence (AI) that is increasingly utilized within the field of cardiovascular medicine. It is essentially how computers make sense of data and decide or classify a task with or without human supervision. The conceptual framework of ML is based on models that receive input data (e.g., images or text) and through a combination of mathematical optimization and statistical analysis predict outcomes (e.g., favorable, unfavorable, or neutral). Several ML algorithms have been applied to daily activities. As an example, a common ML algorithm designated as SVM can recognize non-linear patterns for use in facial recognition, handwriting interpretation, or detection of fraudulent credit card transactions1,2. So-called boosting algorithms used for prediction and classification have been applied to the identification and processing of spam email. Another algorithm, denoted random forest (RF), can facilitate decisions by averaging several node</p>
+    <h2> Machine Learning</h2>
+   <p> Machine Learning Types:
+There are two types in machine learning:
+1)Supervised Learning
+2)Unsupervised Learning<br>
+<b>Supervised Learning:</b><br>
+This is the most common and popular approach to machine learning. It’s
+“supervised” because these models need to be fed manually tagged sample data to learn
+from. Data is labeled to tell the machine what patterns (similar words and images, data
+categories, etc.) it should be looking for and recognize connections with.
+For example, if you want to automatically detect spam, you would need to feed a
+machine learning algorithm examples of emails that you want classified as spam and others
+that are important, and should not be considered spam.<br>
+<b>Unsupervised Learning:</b>
+Unsupervised learning algorithms uncover insights and relationships in unlabeled
+data. In this case, models are fed input data but the desired outcomes are unknown, so they
+have to make inferences based on circumstantial evidence, without any guidance or training.
+The models are not trained with the “right answer,” so they must find patterns on their own.
+One of the most common types of unsupervised learning is clustering, which consists of
+grouping similar data. This method is mostly used for exploratory analysis and can help you
+detect hidden patterns or trends.
+For example, the marketing team of an e-commerce company could use clustering to
+improve customer segmentation.Given a set of income and spending data, a machine
+learning model can identify groups of customers with similar behaviors.</p>
+</body>
+</html>
