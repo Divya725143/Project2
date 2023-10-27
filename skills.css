@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin:0px;
     padding:0px;
@@ -70,4 +71,78 @@ h3{
 .pro img{
     margin-right: 300px;
 }
+=======
+*{
+    margin:0px;
+    padding:0px;
+    text-decoration: none;
+    list-style-type: none;
+}
+.cs1{
+    display: flex;
+    justify-content: space-between;
+    background-color:purple;
+    font-size:20px;
+}
+.cs1 ul{
+    display: flex;
+    
+}
+.cs1 ul li{
+    margin:0 80px;
+    padding:20px;
+}
+.cs1 ul li a{
+    color:orange;
+    font-weight: bold;
+}
+.cs1 ul li a:hover{
+    color: green;
+    transform:  rotate(50deg);
+    cursor: pointer; 
+}
+body{
+    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v975-background-07-b-kqkr4ukm.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=d92b38f7af4f92cbb48fb96c37560242");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h2{
+    text-decoration: underline;
+    font-style: italic;
+    margin:10px;
+}
+.cs2{
+    display: flex;
+    margin:25px;
+}
+.cs2 p{
+    font-size: 20px;
+}
+.html{
+    display: flex;
+    justify-content: space-between;
+    margin:50px;
+}
+.html p{
+    font-size: 20px;
+    margin:20px;
+}
+h3{
+    text-decoration: underline;
+    margin:10px;
+    padding:10px;
+}
+.pro{
+    display: flex;
+    justify-content: space-between;
+}
+.pro p{
+    font-size: 20px;
+    margin:20px;
+}
+.pro img{
+    margin-right: 300px;
+}
+>>>>>>> master
 }
